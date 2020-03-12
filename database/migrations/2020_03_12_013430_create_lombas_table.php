@@ -15,6 +15,10 @@ class CreateLombasTable extends Migration
     {
         Schema::create('lombas', function (Blueprint $table) {
             $table->id();
+            $table->string('nama', 100);
+            $table->bigInteger('juara_1');
+            $table->bigInteger('juara_2');
+            $table->bigInteger('juara_3');
             $table->timestamps();
         });
     }
